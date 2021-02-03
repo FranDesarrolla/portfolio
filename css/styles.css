@@ -8,6 +8,7 @@
 
 body {
 	background-size: cover;
+	background-color: #bdb2ff; 
 }
 
 /* ------- Navbar Modifies ------- */
@@ -51,7 +52,7 @@ footer {
 }
 
 #footer {
-  background: #14151c;
+  background: #1E1E24;
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -60,4 +61,38 @@ footer {
 
 .redsocial {
 	text-decoration: none;
+}
+
+/* ------- Simulador page ------- */
+
+.titule-s {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.contaiSim {
+	margin-top: 50px;
+	background-color: #fdffb6;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.contaiCheck {
+	margin-top: 20px;
+	background-color: #fdffb6;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.separador {
+	margin: 25px 0px 25px 0px;
+}
+
+.divis1 {
+	padding-top: 25px;
+}
+
+.divis2 {
+	padding-bottom: 25px
 }
