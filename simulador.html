@@ -75,73 +75,22 @@
 		  <div class="row mb-3">
 		    <label class="col-sm-2 col-form-label">Nombre</label>
 		    <div class="col-sm-10">
-		      <input type="email" class="form-control" id="inputEmail3">
+		      <input type="name" class="form-control">
 		    </div>
 		  </div>
 		  <fieldset class="row mb-3">
 		    <legend class="col-form-label col-sm-2 pt-0">Seleccione el tipo de pagina que desea: </legend>
-		    <div class="col-sm-10">
-		      <div class="form-check">
-		        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-		        <label class="form-check-label" for="gridRadios1">
-		          Sencilla
-		        </label>
-		      </div>
-		      <div class="form-check">
-		        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-		        <label class="form-check-label" for="gridRadios2">
-		          Elaborada
-		        </label>
-		      </div>
-		    </div>
+		    <select class="form-select" aria-label="Default select example" id="inputPag">
+			  <option selected>Seleccione un tipo de pagina:</option>
+			  <option value="1000">Sencilla</option>
+			  <option value="2500">Elaborada</option>
+			</select>
 		  </fieldset>
-		 <div>
-		  <div class="row mb-3">
-		  	<legend class="col-form-label col-sm-2 pt-0">Recomedaciones para mejorar su experiencia: </legend>
-		    <div class="col-sm-10 offset-sm-2">
-		      <div class="form-check">
-		        <input class="form-check-input" type="checkbox" id="gridCheck1">
-		        <label class="form-check-label" for="gridCheck1">
-		          SEO
-		        </label>
-		      </div>
-		      <div class="form-check">
-		        <input class="form-check-input" type="checkbox" id="gridCheck1">
-		        <label class="form-check-label" for="gridCheck1">
-		          Dominio seguro
-		        </label>
-		      </div>
-		      <div class="form-check">
-		        <input class="form-check-input" type="checkbox" id="gridCheck1">
-		        <label class="form-check-label" for="gridCheck1">
-		          Hosting recomendado
-		        </label>
-		      </div>
-		    </div>
-		  </div>
-		 </div>
-		 <div class="row mb-3">
-		  	<legend class="col-form-label col-sm-2 pt-0">Opcionales: </legend>
-		    <div class="col-sm-10 offset-sm-2">
-		      <div class="form-check">
-		        <input class="form-check-input" type="checkbox" id="gridCheck1">
-		        <label class="form-check-label" for="gridCheck1">
-		          Correcciones de errores 24/7
-		        </label>
-		      </div>
-		      <div class="form-check">
-		        <input class="form-check-input" type="checkbox" id="gridCheck1">
-		        <label class="form-check-label" for="gridCheck1">
-		          Vistazo mensual
-		        </label>
-		      </div>
-		    </div>
-		  </div>
-		  <button type="submit" class="btn btn-primary">Calcular presupuesto</button>
+		  <button type="submit" class="btn btn-primary" id="calcular" onclick="(calcularPrecio();">Calcular presupuesto</button>
 		</form>
 	</div>
 	<div class="container contaiSim3">
-		<h2 class="animate__animated animate__fadeInDown">Su precio aproximado es de: </h2>
+		<h2 class="animate__animated animate__fadeInDown">Su precio aproximado es de: </h2><p id="toma-tu-precio"></p>
 	</div>
 </main>
 
