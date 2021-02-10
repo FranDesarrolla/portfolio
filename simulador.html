@@ -75,7 +75,7 @@
 		  <div class="row mb-3">
 		    <label class="col-sm-2 col-form-label">Nombre</label>
 		    <div class="col-sm-10">
-		      <input type="name" class="form-control">
+		      <input type="name" class="form-control" id="nombre-id">
 		    </div>
 		  </div>
 		  <fieldset class="row mb-3">
@@ -86,11 +86,19 @@
 			  <option value="2500">Elaborada</option>
 			</select>
 		  </fieldset>
-		  <button type="submit" class="btn btn-primary" id="calcular" onclick="(calcularPrecio();">Calcular presupuesto</button>
+		  <fieldset class="row mb-3">
+		    <legend class="col-form-label col-sm-2 pt-0">Seleccione un tipo de plan (Hosting): </legend>
+		    <select class="form-select" aria-label="Default select example" id="inputPag2">
+			  <option selected>Seleccione un tipo de plan: </option>
+			  <option value="2000">Mensual</option>
+			  <option value="10000">Anual</option>
+			</select>
+		  </fieldset>
+		  <button type="button" class="btn btn-primary" id="boton">Calcular</button>
 		</form>
 	</div>
 	<div class="container contaiSim3">
-		<h2 class="animate__animated animate__fadeInDown">Su precio aproximado es de: </h2><p id="toma-tu-precio"></p>
+		<h2 class="animate__animated animate__fadeInDown">Su precio aproximado es de: </h2><h2 id="toma-tu-precio"></h2>
 	</div>
 </main>
 
