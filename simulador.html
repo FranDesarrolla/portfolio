@@ -72,29 +72,33 @@
 	</div>
 	<div class="container contaiSim2">
 		<form class="form-font">
-		  <div class="row mb-3">
-		    <label class="col-sm-2 col-form-label">Nombre:</label>
+		  <div class="row mb-3 space-b">
+		    <label class="col-sm-2 col-form-label"><b>Nombre:</b></label>
 		    <div class="col-sm-10">
-		      <input type="name" class="form-control" id="nombre-id">
+		      <input type="name" class="form-control" id="nombre-id" placeholder="Ingrese su nombre completo">
 		    </div>
 		  </div>
-		  <fieldset class="row mb-3">
-		    <legend class="col-form-label col-sm-2 pt-0">Seleccione el tipo de pagina que desea: </legend>
-		    <select class="form-select" aria-label="Default select example" id="inputPag">
-			  <option selected>Seleccione un tipo de pagina:</option>
-			  <option value="1000">Sencilla</option>
-			  <option value="2500">Elaborada</option>
-			</select>
+		  <fieldset class="row mb-3 space-b">
+		    <legend class="col-form-label col-sm-2 pt-0"><b>Seleccione el tipo de pagina que desea:</b></legend>
+		    <div class="col-sm-10">
+			    <select class="form-select" aria-label="Default select example" id="inputPag">
+				  <option selected value="0">Seleccione un tipo de pagina:</option>
+				  <option value="1000">Sencilla</option>
+				  <option value="2500">Elaborada</option>
+				</select>
+			</div>
 		  </fieldset>
-		  <fieldset class="row mb-3">
-		    <legend class="col-form-label col-sm-2 pt-0">Seleccione un tipo de plan (Hosting): </legend>
-		    <select class="form-select" aria-label="Default select example" id="inputPag2">
-			  <option selected>Seleccione un tipo de plan: </option>
-			  <option value="2000">Mensual</option>
-			  <option value="10000">Anual</option>
-			</select>
+		  <fieldset class="row mb-3 space-b">
+		    <legend class="col-form-label col-sm-2 pt-0"><b>Seleccione un tipo de plan (Hosting):</b></legend>
+		    <div class="col-sm-10">
+			    <select class="form-select" aria-label="Default select example" id="inputPag2">
+				  <option selected value="0">Seleccione un tipo de plan: </option>
+				  <option value="2000">Mensual</option>
+				  <option value="10000">Anual</option>
+				</select>
+			</div>
 		  </fieldset>
-		  <button type="button" class="btn btn-primary" id="boton">Calcular</button>
+		  <button type="button" class="btn btn-dark" id="boton">¡Calcular presupuesto!</button>
 		</form>
 	</div>
 	<div class="container contaiSim3">

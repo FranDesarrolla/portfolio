@@ -78,26 +78,33 @@ footer {
 
 .contaiSim {
 	margin-top: 45px;
-	background-color: #147862;
+	background-color: #1F91DC;
 	border-radius: 20px;
 	padding: 20px 30px 20px 30px;
+	box-shadow: 3px 3px 3px 3px;
 }
 
 .contaiSim2 {
 	margin-top: 25px;
-	background-color: #147862;
+	background-color: #1F91DC;
 	border-radius: 20px;
 	padding: 20px 30px 20px 30px;
+	box-shadow: 3px 3px 3px 3px;
 }
 
 .contaiSim3 {
 	margin-top: 25px;
 	margin-bottom: 100px;
-	background-color: #147862;
+	background-color: #1F91DC;
 	border-radius: 20px;
 	padding: 20px 30px 20px 30px;
+	box-shadow: 3px 3px 3px 3px;
 }
 
 .form-font {
 	font-size: 20px;
+}
+
+.space-b {
+	padding: 25px 0px 25px 0px;
 }
