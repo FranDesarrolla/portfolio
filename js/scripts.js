@@ -1,4 +1,8 @@
 
+	$(document).ready(function() {
+		console.log('Prueba')
+	});
+
 	// Guardar el ID en el LocalStorage //
 
 	function userID(){
