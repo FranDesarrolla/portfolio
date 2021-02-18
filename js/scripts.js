@@ -1,6 +1,18 @@
 
 	$(document).ready(function() {
-		console.log('Prueba')
+		console.log('El navegador funciona correctamente')
+	});
+
+	$(".name-click").click(function() {
+		alert("Tu nombre sera utilizado para futuros usos en nuestra web. Escribe bien tu nombre, sin simbolos extraños ni numeros.")
+	});
+
+	$(".tipo-click").click(function() {
+		alert("Los precios de los tipos de pagina estan sujetos a cambios, son actualizados constantemente. Elija la mejor opcion para lo que le convenga. Paginas simples para emprendimientos chicos y paginas elaboradas para emprendimientos grandes")
+	});
+
+	$(".plan-click").click(function() {
+		alert("Los planes son sacados de paginas recomendables como Hostinger o GoDaddy. Elija la mejor opcion para su emprendimiento, recuerde que el pago se renueva mensualmente o anualmente dependiendo el precio escogido.")
 	});
 
 	// Guardar el ID en el LocalStorage //
