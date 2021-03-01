@@ -15,6 +15,14 @@
 		alert("Los planes son sacados de paginas recomendables como Hostinger o GoDaddy. Elija la mejor opcion para su emprendimiento, recuerde que el pago se renueva mensualmente o anualmente dependiendo el precio escogido.")
 	});
 
+	$("botones").click(function() {})
+		$("img.botones").hide("fast",function() {		
+		});
+
+	$("botones").click(function() {})
+		$("img.botones").show("fast",function() {		
+		});
+
 	// Guardar el ID en el LocalStorage //
 
 	function userID(){
