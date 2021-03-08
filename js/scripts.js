@@ -34,7 +34,7 @@
 		var namae = localStorage.getItem("Nombre");
 
 		console.log(namae);
-	
+
 	}
 
 	// Calculos de presupuesto //
