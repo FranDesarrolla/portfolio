@@ -4,7 +4,7 @@
 	$("#info").click(function(){
 	 $.ajax({
 	 	type:"GET",
-	 	url:"datos/datos.json",
+	 	url:"https://github.com/FranDesarrolla/portfolio/blob/f8cecad4215a5180bdf525aec7ce7c40e9ab5d61/datos.json",
 		dataType: "json",
 		success: function(response) {
 	    	$.each(response.informacion, function(item) {
