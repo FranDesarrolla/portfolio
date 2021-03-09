@@ -2,7 +2,8 @@
 	// JSON y AJAX //
 
 	$("#info").click(function(){
-	 $.get({
+	 $.ajax({
+	 	type:"GET",
 	 	url:"datos/datos.json",
 		dataType: "json",
 		success: function(response) {
