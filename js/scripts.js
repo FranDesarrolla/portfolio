@@ -1,13 +1,13 @@
 
 	// JSON y AJAX //
+
 	$("#info").click(function(){
-	 $.ajax({
-	 	type:"GET",
-		url: "datos.json",
+	 $.get({
+	 	url:"datos/datos.json",
 		dataType: "json",
 		success: function(response) {
-	    	$.each(response.usuarios, function(item) {
-	      	alert(item.name); 
+	    	$.each(response.informacion, function(item) {
+	      	alert(item.name);
 	    });
 	  },
 	  error: function(response) {
