@@ -7,9 +7,10 @@
 	 	url:"datos/datos.json",
 		dataType: "json",
 		success: function(response) {
-	    	console.log(response)
+
+	    console.log("vamo a proba")
 	  },
-	  error: function(response) {
+	  error: function() {
 	    console.log("Hubo un problema!")
 	  },
 	 });
