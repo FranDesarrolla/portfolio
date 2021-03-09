@@ -4,12 +4,10 @@
 	$("#info").click(function(){
 	 $.ajax({
 	 	type:"GET",
-	 	url:"https://github.com/FranDesarrolla/portfolio/blob/f8cecad4215a5180bdf525aec7ce7c40e9ab5d61/datos.json",
+	 	url:"datos/datos.json",
 		dataType: "json",
 		success: function(response) {
-	    	$.each(response.informacion, function(item) {
-	      	alert(item.name);
-	    });
+	    	console.log(response)
 	  },
 	  error: function(response) {
 	    console.log("Hubo un problema!")
