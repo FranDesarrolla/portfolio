@@ -8,7 +8,7 @@
 		dataType: "json",
 		success: function(response) {
 
-	    alert(response)
+	    alert(response.name)
 	  },
 	  error: function() {
 	    console.log("Hubo un problema!")
