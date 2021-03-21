@@ -1,24 +1,4 @@
 
-	// JSON y AJAX //
-
-	$("#info").click(function(){
-	 $.ajax({
-	 	type:"GET",
-	 	url:"datos/datos.json",
-		dataType: "json",
-		success: function(response) {
-
-	    alert(response.name)
-	  },
-	  error: function() {
-	    console.log("Hubo un problema!")
-	  },
-	 });
-
-	});
-
-	// ejemplo JQuery //
-
 	$(document).ready(function() {
 		console.log('El navegador funciona correctamente')
 	});
@@ -33,6 +13,14 @@
 
 	$(".plan-click").click(function() {
 		alert("Los planes son sacados de paginas recomendables como Hostinger o GoDaddy. Elija la mejor opcion para su emprendimiento, recuerde que el pago se renueva mensualmente o anualmente dependiendo el precio escogido.")
+	});
+
+	$(".secc-click").click(function() {
+		alert("Dependiendo de la cantidad de secciones seleccionadas el precio varia, el precio si son '2 o menos' o '5 o mas' tambien varia dependiendo de la cantidad final aclarada por el cliente. Las secciones son como su nombre lo indica las secciones de una web, por ejemplo, 'Galeria', 'Contacto', 'Blog', etc. ")
+	});
+
+	$(".seo-click").click(function() {
+		alert("El SEO es una serie de pasos que debemos tomar los desarrolladores para que su pagina pueda ser encontrada con mas facilidad en los buscadores, como si de un ranking se tratara, conseguir popularidad para su pagina trae beneficios. Es muy recomendable el SEO en una web comercial.")
 	});
 
 	$("botones").click(function() {})
@@ -109,11 +97,17 @@
 
 		var calcPagina = parseInt(document.getElementById("inputPag").value)
 		var calcPlan = parseInt(document.getElementById("inputPag2").value)
-		
-		var costo = calcPagina + calcPlan;
+
+		var calcSecciones = parseInt(document.getElementById("inputPag3").value)
+		var calcSeo = parseInt(document.getElementById("inputPag4").value)
+
+		var secc1 = calcPagina + calcPlan;
+		var secc2 = calcSecciones + calcSeo;
+
+		var costo = secc1 + secc2;
 
 		var precio = document.getElementById("toma-tu-precio");
-		precio.innerText = costo;
+		precio.innerText = costo + "$";
 
 	}
 

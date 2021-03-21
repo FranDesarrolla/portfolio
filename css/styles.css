@@ -78,27 +78,36 @@ footer {
 
 .contaiSim {
 	margin-top: 45px;
-	background-color: #1F91DC;
+	background-color: #dc1fa3;
 	border-radius: 20px;
 	padding: 20px 30px 20px 30px;
-	box-shadow: 3px 3px 3px 3px;
+	box-shadow: 0 8px 6px -6px black;
 }
 
 .contaiSim2 {
 	margin-top: 25px;
-	background-color: #1F91DC;
+	background-color: #ee40ba;
 	border-radius: 20px;
 	padding: 20px 30px 20px 30px;
-	box-shadow: 3px 3px 3px 3px;
+	box-shadow: 0 8px 6px -6px black;
 }
 
 .contaiSim3 {
 	margin-top: 25px;
 	margin-bottom: 100px;
-	background-color: #1F91DC;
+	background-color: #ee40ba;
 	border-radius: 20px;
 	padding: 20px 30px 20px 30px;
-	box-shadow: 3px 3px 3px 3px;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.contaiSim4 {
+	margin-top: 25px;
+	margin-bottom: 100px;
+	background-color: #a3257d;
+	border-radius: 20px;
+	padding: 20px 30px 20px 30px;
+	box-shadow: 0 8px 6px -6px black;
 }
 
 .form-font {
@@ -115,10 +124,24 @@ footer {
 	height: 25px;
 }
 
-/*----- Boton info -------*/
+main {
+	font-family: 'Open Sans', sans-serif;
+}
 
-#info {
-	font-size: 25px;
-	border: none;
-	border-radius: 50px;
+.form-select {
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.bot {
+	border-radius: 100px;
+}
+
+.inpu {
+	box-shadow: 0 8px 6px -6px black;
+}
+
+option {
+	background-color: #1E1E24;
+	color: white;
+	
 }
